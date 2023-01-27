@@ -20,7 +20,7 @@ def main():
 
     # fill up histogram
     with open(args.fname, "r") as f:
-        counter = fill_up_histogram_from_list(f)
+        counter = fill_up_histogram_from_list(list(f))
 
     # find max key
     max_key, max_counter, min_key, min_counter = find_max_key(counter)
